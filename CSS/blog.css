@@ -1,0 +1,256 @@
+/* asdfghjkasddffgh */
+/* Add to your existing CSS in `styles.css` */
+
+/* Light mode styles (default) */
+
+header {
+  background-color: #04af2f;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+.head{
+  position: relative;
+  top: 75px;
+}
+
+.container {
+  margin: 100px auto;
+  display: flex;
+  max-width: 1200px;
+  padding: 20px;
+  transition: padding 0.5s ease;
+}
+
+main {
+  flex: 2;
+  padding-right: 20px;
+  transition: flex 0.5s ease, padding-right 0.5s ease;
+}
+
+aside {
+  flex: 1;
+  transition: flex 0.5s ease;
+}
+
+#sidebar {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+}
+
+#dark-mode-button {
+  background-color: #04af2f;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+a {
+  text-decoration: none;
+  padding: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+}
+
+#dark-mode-button:hover {
+  background-color: #90EE90;
+}
+
+.section {
+  margin-bottom: 30px;
+  transition: margin-bottom 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.post,
+.material {
+  background-color: #ACE1AF;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post:hover,
+.material:hover {
+  background-color: #ecf0f1;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark mode styles */
+
+body.dark-mode {
+  background-color: #000000;
+  color: #fff;
+}
+
+header.dark-mode {
+  background-color: #000000;
+}
+
+.container.dark-mode {
+  background-color: #000000;
+}
+
+main.dark-mode {
+  color: #000000;
+}
+
+aside.dark-mode {
+  background-color: #444;
+}
+
+#sidebar.dark-mode {
+  background-color: #555;
+  color: #ddd;
+}
+
+#dark-mode-button.dark-mode {
+  background-color: #555;
+}
+
+.section.dark-mode {
+  background-color: #444;
+}
+
+.post.dark-mode,
+.material.dark-mode {
+  background-color: #333;
+  color: #0a0a0a;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.post.dark-mode:hover,
+.material.dark-mode:hover {
+  background-color: #444;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+/* card-section    */
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.founder-section {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-evenly; /* Adjust as needed */
+}
+
+.founder-box {
+  width: calc(50% - 20px);
+  margin: 10px;
+  padding: 30px;
+  border: 1px solid lightblue;
+  border-radius: 10px;
+  box-shadow: rgba(1, 230, 77, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.founder-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+h2 {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 12px 30px;
+  font-size: 18px;
+  background-color: #04af2f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+
+@media(max-width:600px){
+  header{
+    width: 100%;
+  }
+  .head{
+    top: 60px;
+  }
+  .post h3{
+    font-size: 10px;
+  }
+  .post p{
+    font-size: 10px;
+  }
+  .section h3{
+    font-size: 10px;
+  }
+  .section p{
+    font-size: 10px;
+  }
+  .section{
+    margin-top: -30px;
+  }
+  h2{
+    font-size: 20px;
+  }
+  .post{
+    margin-top: -20px;
+  }
+  .material{
+    margin-top: -20px;
+  }
+  #sidebar{
+    margin-top: 30px;
+    padding-top: px;
+    
+  }
+  .founder-section{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-founders{
+    display: none;
+
+  }
+}

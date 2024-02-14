@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+    <script src="https://kit.fontawesome.com/edf15d3cf8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="page1">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="image/logomain.jpeg" alt="">
+            </div>
+            <div class="navItems">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="">Programs</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="icons">
+                <div class="contactNumber">
+                    <span class="call-tag">Support: </span>
+                    <span>support.atlas@gmail.com</span>
+                    <div class="divider"></div>
+                </div>
+                <div class="login flex toCenter">
+                    <button class="log-in">Login</button>
+                    <button class="user"></button>
+                    <div class="login-container">
+                        <div class="login-cross-button">
+                            <button id="login-cross-button">X
+                            </button>
+                        </div>
+                        <h2>Login</h2>
+                        <form id="loginForm">
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" name="username" required>
+
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" required>
+
+                            <button type="button" class="sign-in">Sign In</button>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="menu">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+        <div class="hero-section">
+            <div class="hero-section-content">
+                <div class="search-container">
+                    <!-- <input type="text" placeholder="Search...">
+                    <button class="btn2" type="submit">Search</button> -->
+                    <input type="text" id="searchInput" placeholder="Search..." />
+      <button id="clearButton">X</button>
+      <ul id="searchResults"></ul>
+                </div>
+                <div class="content">
+                    <ul id="linksList">
+                      <!-- Add your anchor tags here -->
+                      <li><a href="btech_1.html">Btech First Year</a></li>
+                      <li><a href="btech_2.html">Btech Second Year</a></li>
+                      <li><a href="btech_3.html">Btech Third Year</a></li>
+                      <li><a href="btech_4.html">Btech Final Year</a></li>
+                      <li><a href="#">Link 2</a></li>
+                      <li><a href="#">Link 3</a></li>
+                      <!-- Add more links as needed -->
+                    </ul>
+                  </div>
+
+                <div class="main-headings">
+                    <div class="dropping-texts">
+                        <div>Developers</div>
+                        <div>Designers</div>
+                        <div>Coders</div>
+                        <div>EVERYONE!</div>
+                    </div>
+                    <p>Our website is dedicated to supporting B.Tech students on their academic journey by providing a comprehensive range of study resources. Whether you're navigating through the complexities of computer science, delving into the intricacies of electrical engineering, or exploring the world of mechanical engineering, we've got you covered.</p>
+                    <button class="glow-on-hover1" type="button"><a class="btn-link" href="#courses">Get Started Now!</a></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- course-section -->
+    <section class="course-section-page flex toCenter" id="courses">
+        <div class="course-section">
+            <div class="course-heading">
+                <span class="c-h1">Students</span><span class="c-h2">Library</span>
+                <p>A Repository of Excellence: Elevate Your Academic Journey at the Student Library</p>
+            </div>
+            <div class="underline">
+                <div class="line"></div>
+                <div class="square"></div>
+                <div class="line"></div>
+            </div>
+            <div class="course-boxes">
+                <div class="course-box">
+                    <div class="box-heading flex">
+                        <h2>Btech 1st Year</h2>
+                        <a href="btech_1.html"><button class="glow-on-hover">Explore..!</button></a>
+                    </div>
+                    <div class="box-icon flex">
+                        <div class="course-icon flex-col">
+                            <a href=""><img src="image/mathp.png" alt=""></a>
+                            <a href="">Phisics</a>
+                      </div>
+                        <div class="course-icon flex-col">
+                            <a href=""><img src="image/maths2 (1).jpg" alt=""></a>
+                            <a href="">Maths-I</a>
+                        </div>
+                        <div class="course-icon flex-col">
+                            <a href=""><img src="image/c.jpg" alt=""></a>
+                            <a href="">PPS</a>
+                        </div>
+                        <div class="course-icon flex-col">
+                            <a href=""><img src="image/electrical (1).jpg" alt=""></a>
+                            <a href="">Chemistry</a>
+                        </div>
+                        <div class="course-icon flex-col">
+                            <a href=""><img src="image/electronics (1).jpg" alt=""></a>
+                            <a href="">Electronics</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-box">
+                    <div class="box-heading flex">
+                        <h2>Btech 2nd Year</h2>
+                        <a href="btech_2.html"><button class="glow-on-hover">Explore..!</button></a>
+                    </div>
+                    <div class="box-icon flex">
+                        <div class="course-icon flex-col">
+                            <a href="btech2/sub_DS.html"><img src="image/ds.png" alt=""></a>
+                            <a href="btech2/sub_DS.html">Data Structure</a>
+                        </div>
+                        <div class="course-icon flex-col">
+                            <a href="btech2/sub_PYTHON.html"><img src="image/python.png" alt=""></a>
+                            <a href="btech2/sub_PYTHON.html">Python</a>
+                        </div>
+                        <div class="course-icon flex-col">
+                            <a href="btech2/sub_MATHS4.html"><img src="image/maths2 (1).jpg" alt=""></a>
+                            <a href="btech2/sub_MATHS4.html">Maths-IV</a>
+                        </div>
+                        <div class="course-icon flex-col">
+                            <a href="btech2/sub_COA.html"><img src="image/coa.webp" alt=""></a>
+                            <a href="btech2/sub_COA.html">COA</a>
+                        </div>
+                        <div class="course-icon flex-col">
+                            <a href="btech2/sub_DSTL.html"><img src="image/discrete.webp" alt=""></a>
+                            <a href="btech2/sub_DSTL.html">Discrete Maths</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-box">
+                    <div class="box-heading flex">
+                        <h2>Btech 3rd Year</h2>
+                        <a href="btech_3.html"><button class="glow-on-hover">Explore..!</button></a>
+                    </div>
+                    <div class="box-icon flex">
+                        <div class="course-icon flex-col">
+                            <a href=""><img src="image/webdev.webp" alt=""></a>
+                            <a href="">Web Technology</a>
+                        </div>
+                        <div class="course-icon flex-col">
+                            <a href=""><img src="image/dbms.webp" alt=""></a>
+                            <a href="">DBMS</a>
+                        </div>
+                        <div class="course-icon flex-col">
+                            <a href=""><img src="image/software.webp" alt=""></a>
+                            <a href="">Software Engineering</a>
+                        </div>
+                        <div class="course-icon flex-col">
+                            <a href=""><img src="image/dataanalytics.webp" alt=""></a>
+                            <a href="">Data Analytics</a>
+                        </div>
+                        <div class="course-icon flex-col">
+                            <a href=""><img src="image/computernetwork.webp" alt=""></a>
+                            <a href="">Computer Networks</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-box">
+                    <div class="box-heading flex">
+                        <h2>Btech 4th Year</h2>
+                        <a href="btech_4.html"><button class="glow-on-hover">Explore..!</button></a>
+                    </div>
+                    <div class="box-icon flex">
+                        <div class="course-icon flex-col">
+                            <a href=""><img src="image/4th-year.jpg" alt=""></a>
+                            <a href="">Departmental Elective-IV</a>
+                        </div>
+                        <div class="course-icon flex-col">
+                            <a href=""><img src="image/4th-year.jpg" alt=""></a>
+                            <a href="">Departmental Elective-V</a>
+                        </div>
+                        <div class="course-icon flex-col">
+                            <a href=""><img src="image/4th-year.jpg" alt=""></a>
+                            <a href="">Open Elective-II</a>
+                        </div>
+                        <div class="course-icon flex-col">
+                            <a href=""><img src="image/4th-year.jpg" alt=""></a>
+                            <a href="">Open Elective-III</a>
+                        </div>
+                        <div class="course-icon flex-col">
+                            <a href=""><img src="image/4th-year.jpg" alt=""></a>
+                            <a href="">Open Elective-IV</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Lab FILE SECTION  -->
+    <section class="custom-section">
+        <h1 class="section-heading">Lab Files</h1>
+        <button class="custom-button">Coming Soon...</button>
+    </section>
+
+
+    <!-- feedback-section--- -->
+    <section class="custom-section">
+        <h1 class="section-heading">Enter your Valuable Feedback</h1>
+        <button class="custom-button">Click Here</button>
+       
+    
+    </section>
+    <div class="feedback-container">
+        <div>
+            <button class="cut-btn" >X
+            </button>
+        </div> 
+        <h2>Student Feedback</h2>
+        <form class="feedback-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="0b5f7edf-5ce6-45a2-a466-3422318055b3">
+                       
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <div class="h-captcha" data-captcha="true"></div>
+
+            <input type="submit" value="Submit" class="submit_button">
+            <!-- <button type="submit">Submit Feedback</button> -->
+        </form>
+    </div>
+
+    <!-- footer section------ -->
+    <footer>
+        <div class="footer">
+            <div class="up-footer">
+                <div class="find-us">
+                    <strong>Find Us: </strong>
+                    <p>JSSATE, Sector-62, Noida</p>
+                </div>
+                <div class="call-us">
+                    <strong>Call Us: </strong>
+                    <p> +91-91xxxxxxxx</p>
+                </div>
+                <div class="mail-us">
+                    <strong>Mail Us: </strong>
+                    <p> mail.atlas@gmail.com</p>
+                </div>
+            </div>
+            <div class="underline center">
+                <div class="line"></div>
+                <div class="square"></div>
+                <div class="line"></div>
+            </div>
+            <div class="down-footer">
+                <div class="logo-about-follow">
+                    <div class="logo-">
+                        <img src="image/logomain.jpeg" alt="">
+                    </div>
+                    <div class="about-">
+                        <p>"Your compass for academic success—Academic Atlas provides essential study resources for college excellence"</p>
+                    </div>
+                    <div class="follow-">
+                        <h3>Follow Us</h3>
+                    </div>
+                    <div class="footer-icons">
+                        <a href="https://www.facebook.com"><img src="image/facebook-icon.png" alt=""></a>
+                        <a href="https://www.linkedin.com"><img src="image/linkedin-icon.png" alt=""></a>
+                        <a target="_blank"
+                            href="https://www.youtube.com"><img
+                                src="image/youtube-icon.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="useful-links">
+                    <h3>Useful Links</h3>
+                    <div class="useful-link-items">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="blog.html">BLog</a>
+                        <a href="contact.html">Contact Us</a>
+                        <!-- <a href="">Courses</a> -->
+                    </div>
+                </div>
+                <div class="subscribe">
+                    <h3>Subscribe US</h3>
+                    <p>Subscribe to our website's email updates for staying ahead in your academic journey!</p>
+                    <div class="sub">
+                        <input type="email" placeholder="Enter your Email...">
+                        <button id="dddddd" class="email-btn" type="submit">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    <script src="JS/search.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>

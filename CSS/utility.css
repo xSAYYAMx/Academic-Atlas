@@ -1,0 +1,21 @@
+.flex{
+    display: flex;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.border{
+    border: 2px solid black;
+}
+
+.toCenter{
+    align-items: center;
+    justify-content: center;
+}
+
+.padding{
+    padding: 7px;
+}
+

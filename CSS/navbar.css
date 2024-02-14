@@ -1,0 +1,222 @@
+.user {
+  width: 10vw;
+  border-style: none;
+  display: none;
+
+  background-color: #04af2f;
+  text-align: center;
+
+  /* position: absolute; */
+  right: 1vw;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #04af2f;
+  border-style: none;
+}
+
+.navbar {
+  position: fixed;
+
+  height: 5vw;
+  background-color: #fff;
+  width: 100%;
+  z-index: 9;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.logo img {
+  height: 71px;
+  width: 280px;
+}
+
+.navItems {
+  background-color: #ffffff;
+  position: relative;
+  display: flex;
+  gap: 50px;
+  /* margin-right: 400px; */
+  /* background-color: aqua;
+      border: 1px solid black; */
+  padding: 5px;
+}
+
+.navItems a {
+  text-decoration: none;
+  font-size: 1.15rem;
+  font-weight: 545;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+  letter-spacing: 2px;
+  padding: 5px;
+}
+.navItems a:hover {
+  box-shadow: rgba(0, 255, 85, 0.24) 0px 3px 8px;
+  border-radius: 10%;
+}
+/* extra class for menu */
+.menu-section {
+  display: block;
+  background-color: rgb(255, 12, 32);
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-right: 15px;
+}
+
+.icons span {
+  font-size: 1rem;
+}
+
+.log-in {
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-align: center;
+  width: 10vw;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #04af2f;
+  border-style: none;
+}
+.log-in:hover {
+  cursor: pointer;
+}
+
+/* .login:hover{
+      border-bottom: 1px solid red;
+  } */
+.login-box {
+  position: absolute;
+  z-index: 9;
+  top: 10vh;
+  right: 0vw;
+  background-color: #0056b3;
+  animation-name: login-box;
+  animation-duration: 1s;
+}
+@keyframes login-box {
+  from {
+    transform: translateX(200px);
+    background-color: #04af2f;
+  }
+}
+
+.divider {
+  height: 14px;
+  width: 0px;
+  border: 1px solid black;
+}
+
+.contactNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.call-tag {
+  color: #007a5c;
+}
+.menu {
+  font-size: 4vh;
+  font-weight: 800;
+  align-items: center;
+  display: none;
+}
+
+
+
+@media (max-width: 1200px) {
+  .contactNumber span {
+    font-size: 0.7em;
+    display: none;
+  }
+  .navItems a {
+    font-size: 1em;
+  }
+  .logo img {
+    height: 51px;
+    width: 155px;
+  }
+}
+@media (max-width: 850px) {
+  .navbar {
+    height: 8vh;
+  }
+    .navItems.menu-section {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    color: #48ff00;
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+    width: 200px;
+    animation-name: menu;
+    animation-duration: 1s;
+  }
+  @keyframes menu {
+    from {
+      transform: translateX(200px);
+    }
+  }
+
+  .navItems {
+    display: none;
+    gap: 50px;
+    /* margin-right: 400px; */
+    /* background-color: aqua;
+      border: 1px solid black; */
+    padding: 5px;
+  }
+  .contactNumber {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .menu {
+    font-size: 4vh;
+    font-weight: 800;
+    align-items: center;
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .log-in {
+    font-size: 0.8rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    width: 15vw;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #04af2f;
+    border-style: none;
+  }
+  .menu {
+    font-size: 3.5vh;
+    font-weight: 400;
+    padding: 1px 0px 0px 0px;
+  }
+}

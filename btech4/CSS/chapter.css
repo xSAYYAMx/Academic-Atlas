@@ -1,0 +1,219 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color:#e94646;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.chapters-section {
+    width: 25%;
+    
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    overflow-y: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/* Add these styles for hover effects and transitions */
+
+.chapters-section {
+    transition: background-color 0.3s ease;
+}
+
+.chapters-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.chapters-section li {
+    margin-bottom: 15px;
+   
+    transition: background-color 0.3s ease;
+}
+
+.chapters-section li:hover {
+   
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+    
+}
+
+.chapters-section a {
+    background-color:#04af2f;
+    width: 90%;
+    border-radius: 20px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+    padding: 12px;
+}
+
+.chapters-section a:hover {
+    background-color:aliceblue;
+    color:#04af2f;
+    border: 1px solid #04af2f;
+  text-decoration: none;
+    
+    border-radius: 20px;
+    transition: color 0.3s ease;
+}
+
+
+.chapters-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.chapters-section li {
+    margin-bottom: 10px;
+}
+
+.main-section {
+    flex: 1;
+    margin-left: 20px;
+    background-color:hwb(0 100% 0%);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.chapter {
+    margin-bottom: 30px;
+}
+
+.videos,
+.pdfs,
+.topics {
+    margin-top: 15px;
+}
+.videos iframe{
+    width: 90%;
+    border-radius: 10px;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.pdfs a{
+    background-color:#04af2f;
+    width: 30%;
+    border-radius: 20px;
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+    padding: 12px;
+}
+.pdfs a:hover{
+    background-color:aliceblue;
+    color:#04af2f;
+    border: 1px solid #04af2f;
+ 
+   
+  text-decoration: none;
+    
+    border-radius: 20px;
+    transition: color 0.3s ease;
+}
+
+
+/* here quantum pdfs  */
+
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.pdfs-section {
+    width: 25%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.pdfs-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pdfs-section li {
+    margin-bottom: 15px;
+}
+
+.pdfs-section a {
+    color:white;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s ease;
+    background-color:#04af2f;
+    width: 90%;
+    border-radius: 20px;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+    padding: 12px;
+}
+
+.pdfs-section a:hover {
+    background-color:aliceblue;
+    color:#04af2f;
+    border: 1px solid #04af2f;
+ 
+    text-decoration: underline;
+    
+    
+    text-decoration: none;
+      
+      border-radius: 20px;
+      transition: color 0.3s ease;
+}
+
+.main-section {
+    flex: 1;
+    margin-left: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    /* height: 100vh; */
+}
+
+#pdf-viewer {
+    width: 100%;
+    height: 100%;
+}
+
+
+.pdfs-section a{
+
+}
